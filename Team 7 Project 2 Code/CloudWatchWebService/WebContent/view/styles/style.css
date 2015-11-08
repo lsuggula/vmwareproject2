@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+body {
+  padding: 0px;
+  background: #e5e2e6;
+}
+.flatTable {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  font-weight: bold;
+  color: #6b6b6b;
+}
+.flatTable tr {
+  height: 50px;
+  background: #d4d1d5;
+  border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+}
+.flatTable td {
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+.flatTable .titleTr {
+  height: 70px;
+  color: #f6f3f7;
+  background: #418a95;
+  border: 0px solid;
+}
+.flatTable .plusTd {
+  background: url(http://i.imgur.com/3hSkhay.png) center center no-repeat, rgba(0, 0, 0, 0.1);
+}
+.flatTable .controlTd {
+  position: relative;
+  width: 80px;
+  background: url(delete.png) center center no-repeat;
+  cursor: pointer;
+}
+.flatTable .headingTr {
+  height: 30px;
+  background: #63acb7;
+  color: #f6f3f7;
+  font-size: 8pt;
+  border: 0px solid;
+}
+.button {
+  text-align: center;
+  cursor: pointer;
+}
+.sForm {
+  position: absolute;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background: #d4d1d5;
+  overflow: hidden;
+  transition: width 1s, right .3s;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.sForm .close {
+  float: right;
+  height: 70px;
+  width: 80px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  background: rgba(255, 0, 0, 0.4);
+}
+.sForm .title {
+  width: 100%;
+  height: 70px;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+}
+.open {
+  right: 0;
+  width: 400px !important;
+}
+.settingsIcons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+.display {
+  width: 300px;
+}
+.settingsIcon {
+  float: right;
+  background: #418a95;
+  color: #f6f3f7;
+  height: 50px;
+  width: 80px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  transition: width 1s;
+}
+.settingsIcon:hover {
+  background: #1f6873;
+}
+tr:nth-child(3) .settingsIcon {
+  height: 51px;
+}
+.openIcon {
+  width: 80px;
+}
+
+
+	
+
+    .onoffswitch {
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #666666; border-radius: 30px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+        -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        border-radius: 30px;
+        box-shadow: 0px 15px 0px rgba(0,0,0,0.08) inset;
+    }
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 15px;
+        background-color: #6BB2ED; color: #FFFFFF;
+        border-radius: 30px 0 0 30px;
+    }
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 15px;
+        background-color: #FFFFFF; color: #666666;
+        text-align: right;
+        border-radius: 0 30px 30px 0;
+    }
+    .onoffswitch-switch {
+        display: block; width: 30px; margin: 0px;
+        background: #FFFFFF;
+        border: 2px solid #666666; border-radius: 30px;
+        position: absolute; top: 0; bottom: 0; right: 56px;
+        -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+        -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+        background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+        background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+        background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+        background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%);
+        box-shadow: 0 1px 1px white inset;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+    }

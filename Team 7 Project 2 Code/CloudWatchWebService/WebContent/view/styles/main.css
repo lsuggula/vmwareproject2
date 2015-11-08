@@ -1,0 +1,87 @@
+@CHARSET "ISO-8859-1";
+
+body {font-family:verdana;}
+a:link { text-decoration: none; color: #404040;  font-size:15px;}
+a:hover { color: #FF0000;}
+
+table.query-table { border-collapse: collapse; }
+th {color: #FFF;
+background-color: #555;
+border: 1px solid #555;
+padding: 3px;
+vertical-align: top;
+text-align: left; }
+
+table.query-table tr:nth-child(2n+1) {
+    background-color: #F1F1F1;
+}
+
+table.query-table tr:nth-child(2n) {
+    background-color: #FFF;
+}
+
+table.query-table td {
+    border: 1px solid #D4D4D4;
+    padding: 7px 5px;
+    vertical-align: top;
+}
+
+span.color_h1 {
+    color: #8AC007;
+}
+
+table.profile-table {
+    border: 2px solid #FFF;
+    margin-bottom: 24px;
+}
+
+table.profile-table td {
+    background-color: rgba(212, 221, 228, 0.15);
+    border: 2px solid #FFF;
+    box-shadow: 0px -1px 0px 0px rgba(212, 221, 228, 0.5) inset;
+}
+
+table.form-table {
+    background-color: transparent;
+    border-collapse: collapse;
+	border-spacing: 0px;
+	box-sizing: border-box;
+	border:0px; 
+	cellpadding:8px; 
+	cellspacing:0px;
+}
+
+.btn {
+	    color: #FFF;
+    background-color: #7E8F0B;
+    text-decoration: none;
+    display: inline-block;
+margin-bottom: 0px;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857;
+border-radius: 4px;
+-moz-user-select: none;
+}
+
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+#header {
+	background-color: #222;
+    backface-visibility: hidden;
+    margin: 0 0 40px !important;
+    padding: 0;
+    position: relative;
+}
